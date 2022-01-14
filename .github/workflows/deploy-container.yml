@@ -3,8 +3,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
-    paths:
-      - "packages/container/**"
+    # paths:
+    #   - "packages/container/**"
 defaults:
   run:
     working-directory: packages/container
