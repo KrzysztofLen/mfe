@@ -2,9 +2,9 @@ name: deploy-container
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
-    # paths:
-    #   - "packages/container/**" // ACTIONS RUN ONLY IF CHANGES ARE MADE INSIDE CONTAINER FOLDER
+    branches: [master]
+    paths:
+      - "packages/container/**" # ACTIONS RUN ONLY IF CHANGES ARE MADE INSIDE CONTAINER FOLDER
 defaults:
   run:
     working-directory: packages/container
